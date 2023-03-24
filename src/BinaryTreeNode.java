@@ -1,8 +1,8 @@
 public class BinaryTreeNode<T> {
 
-    private T element;
-    private BinaryTreeNode<T> leftChild;
-    private BinaryTreeNode<T> rightChild;
+    T element;
+    BinaryTreeNode<T> leftChild;
+    BinaryTreeNode<T> rightChild;
 
     public BinaryTreeNode(T element) {
         this.element = element;
@@ -19,19 +19,21 @@ public class BinaryTreeNode<T> {
     public T getElement() {
         return element;
     }
-
-    public BinaryTreeNode getLeftChild() {
+    public void setElement(T element) {
+        this.element = element;
+    }
+    public BinaryTreeNode<T> getLeftChild() {
         return leftChild;
     }
 
-    public BinaryTreeNode getRightChild() {
+    public BinaryTreeNode<T> getRightChild() {
         return rightChild;
     }
 
-    public void setLeftChild(BinaryTreeNode binaryTreeNode) {
+    public void setLeftChild(BinaryTreeNode<T> binaryTreeNode) {
         this.leftChild = binaryTreeNode;
     }
-    public void setRightChild(BinaryTreeNode binaryTreeNode) {
+    public void setRightChild(BinaryTreeNode<T> binaryTreeNode) {
         this.rightChild = binaryTreeNode;
     }
 }
